@@ -1,0 +1,53 @@
+<?php
+$lang = [
+    'app_name' => 'ZenTaiChi',
+    'nav_home' => 'Accueil',
+    'nav_progress' => 'Progrès',
+    'nav_settings' => 'Paramètres',
+    
+    // Auth
+    'login' => 'Connexion',
+    'register' => 'S\'inscrire',
+    'username' => 'Nom d\'utilisateur',
+    'password' => 'Mot de passe',
+    'confirm_password' => 'Confirmer le mot de passe',
+    'logout' => 'Déconnexion',
+    'no_account' => 'Vous n\'avez pas de compte ? Inscrivez-vous ici.',
+    'has_account' => 'Vous avez déjà un compte ? Connectez-vous.',
+    'auth_error' => 'Nom d\'utilisateur ou mot de passe invalide.',
+    'register_error' => 'Le nom d\'utilisateur est déjà pris ou les mots de passe ne correspondent pas.',
+    
+    // Dashboard
+    'daily_practice' => 'Pratique Quotidienne',
+    'mins_practiced' => 'min. de pratique aujourd\'hui',
+    'goal' => 'Objectif',
+    'complete' => 'Terminé',
+    'practice_modules' => 'Modules de Pratique',
+    'module_warmup' => 'Échauffement',
+    'module_warmup_desc' => 'Mouvements simples et accueillants',
+    'module_walking' => 'Marche Tai Chi',
+    'module_walking_desc' => 'Concentrez-vous sur la stabilité et l\'équilibre',
+    'module_cloud' => 'Formes de Base (Cloud Hands)',
+    'module_cloud_desc' => 'État fluide et méditatif',
+    'accessibility_note' => 'Appuyez sur une carte pour commencer votre session guidée.',
+    
+    // Player
+    'session' => 'Session de Tai Chi',
+    'live_lesson' => 'Leçon en direct',
+    'mirror_mode' => 'Mode Miroir',
+    'mirror_off' => 'Miroir : Désactivé',
+    'mirror_on' => 'Miroir : Activé',
+    'mirror_desc' => 'Inverser la vidéo pour un suivi facile',
+    'playback_speed' => 'Vitesse de lecture',
+    'speed_slow' => '0.5x Lent',
+    'speed_relaxed' => '0.75x Détendu',
+    'speed_normal' => '1.0x Normal',
+    'breathing_guide' => 'Guide de Respiration',
+    'breathing_desc' => 'Synchronisez votre mouvement avec votre respiration',
+    'inhale' => 'Inspirer',
+    'exhale' => 'Expirer',
+    'session_progress' => 'Progression de la session',
+    'foundation_walk' => 'Marche de Base',
+    'energy_flow' => 'Flux d\'énergie',
+    'cool_down' => 'Récupération',
+];

@@ -1,0 +1,53 @@
+<?php
+$lang = [
+    'app_name' => 'ZenTaiChi',
+    'nav_home' => 'Start',
+    'nav_progress' => 'Voortgang',
+    'nav_settings' => 'Instellingen',
+    
+    // Auth
+    'login' => 'Inloggen',
+    'register' => 'Registreren',
+    'username' => 'Gebruikersnaam',
+    'password' => 'Wachtwoord',
+    'confirm_password' => 'Bevestig Wachtwoord',
+    'logout' => 'Uitloggen',
+    'no_account' => 'Nog geen account? Registreer hier.',
+    'has_account' => 'Heb je al een account? Log in.',
+    'auth_error' => 'Ongeldige gebruikersnaam of wachtwoord.',
+    'register_error' => 'Gebruikersnaam is al in gebruik of wachtwoorden komen niet overeen.',
+    
+    // Dashboard
+    'daily_practice' => 'Dagelijkse Oefening',
+    'mins_practiced' => 'min. geoefend vandaag',
+    'goal' => 'Doel',
+    'complete' => 'Voltooid',
+    'practice_modules' => 'Oefenmodules',
+    'module_warmup' => 'Warming-up',
+    'module_warmup_desc' => 'Eenvoudige, rustige bewegingen',
+    'module_walking' => 'Tai Chi Walking',
+    'module_walking_desc' => 'Focus op balans en stabiliteit',
+    'module_cloud' => 'Basis Vormen (Cloud Hands)',
+    'module_cloud_desc' => 'Vloeiende, meditatieve status',
+    'accessibility_note' => 'Tik op een module om je begeleide sessie te starten.',
+    
+    // Player
+    'session' => 'Tai Chi Sessie',
+    'live_lesson' => 'Live Les',
+    'mirror_mode' => 'Spiegel Mode',
+    'mirror_off' => 'Spiegel: Uit',
+    'mirror_on' => 'Spiegel: Aan',
+    'mirror_desc' => 'Draai de video om voor makkelijk volgen',
+    'playback_speed' => 'Afspeelsnelheid',
+    'speed_slow' => '0.5x Traag',
+    'speed_relaxed' => '0.75x Ontspannen',
+    'speed_normal' => '1.0x Normaal',
+    'breathing_guide' => 'Ademhalingsgids',
+    'breathing_desc' => 'Synchroniseer je beweging met je ademhaling',
+    'inhale' => 'Inademen',
+    'exhale' => 'Uitademen',
+    'session_progress' => 'Sessie Voortgang',
+    'foundation_walk' => 'Basis Loop',
+    'energy_flow' => 'Energie Stroom',
+    'cool_down' => 'Cool Down',
+];

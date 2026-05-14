@@ -1,0 +1,53 @@
+<?php
+$lang = [
+    'app_name' => 'ZenTaiChi',
+    'nav_home' => 'Home',
+    'nav_progress' => 'Progress',
+    'nav_settings' => 'Settings',
+    
+    // Auth
+    'login' => 'Log In',
+    'register' => 'Register',
+    'username' => 'Username',
+    'password' => 'Password',
+    'confirm_password' => 'Confirm Password',
+    'logout' => 'Log Out',
+    'no_account' => 'Don\'t have an account? Register here.',
+    'has_account' => 'Already have an account? Log in.',
+    'auth_error' => 'Invalid username or password.',
+    'register_error' => 'Username is already taken or passwords do not match.',
+    
+    // Dashboard
+    'daily_practice' => 'Daily Practice',
+    'mins_practiced' => 'mins practiced today',
+    'goal' => 'Goal',
+    'complete' => 'Complete',
+    'practice_modules' => 'Practice Modules',
+    'module_warmup' => 'Warm-up',
+    'module_warmup_desc' => 'Simple, welcoming movements',
+    'module_walking' => 'Tai Chi Walking',
+    'module_walking_desc' => 'Focus on stability and balance',
+    'module_cloud' => 'Basic Forms (Cloud Hands)',
+    'module_cloud_desc' => 'Flowing, meditative state',
+    'accessibility_note' => 'Tap any card to begin your guided session.',
+    
+    // Player
+    'session' => 'Tai Chi Session',
+    'live_lesson' => 'Live Lesson',
+    'mirror_mode' => 'Mirror Mode',
+    'mirror_off' => 'Mirror: Off',
+    'mirror_on' => 'Mirror: On',
+    'mirror_desc' => 'Reverse video for easy following',
+    'playback_speed' => 'Playback Speed',
+    'speed_slow' => '0.5x Slow',
+    'speed_relaxed' => '0.75x Relaxed',
+    'speed_normal' => '1.0x Normal',
+    'breathing_guide' => 'Breathing Guide',
+    'breathing_desc' => 'Synchronize your movement with your breath',
+    'inhale' => 'Inhale',
+    'exhale' => 'Exhale',
+    'session_progress' => 'Session Progress',
+    'foundation_walk' => 'Foundation Walk',
+    'energy_flow' => 'Energy Flow',
+    'cool_down' => 'Cool Down',
+];

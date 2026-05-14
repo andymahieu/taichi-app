@@ -1,17 +1,19 @@
 <?php
 header('Content-Type: application/json');
+require_once '../includes/auth.php';
+require_login();
 require_once '../db.php';
 
 // Accept JSON payload
 $data = json_decode(file_get_contents('php://input'), true);
 
-if (!isset($data['user_id']) || !isset($data['module_name']) || !isset($data['duration_minutes'])) {
+if (!isset($data['module_name']) || !isset($data['duration_minutes'])) {
     http_response_code(400);
     echo json_encode(['error' => 'Missing required fields']);
     exit;
 }
 
-$user_id = $data['user_id'];
+$user_id = $_SESSION['user_id'];
 $module_name = $data['module_name'];
 $duration_minutes = $data['duration_minutes'];
 $date_practiced = date('Y-m-d');

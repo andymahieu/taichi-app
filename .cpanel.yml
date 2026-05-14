@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/isandy/public_html/taichi-app/
+    - export DEPLOYPATH=/home/isandybe/public_html/taichi-app/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH

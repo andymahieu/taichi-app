@@ -69,7 +69,10 @@ require_login();
 
 <main class="pt-24 max-w-6xl mx-auto px-6">
     <section class="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg bg-black mb-8">
-        <iframe id="video-frame" class="w-full h-full transition-transform duration-300" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video id="video-frame" class="w-full h-full object-cover transition-transform duration-300" controls controlsList="nodownload">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- Overlay is disabled to allow clicking the video controls -->
         <div class="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none">
             <div class="flex justify-between items-start pointer-events-auto">
                 <span class="bg-primary px-4 py-1.5 rounded-full text-white text-sm font-semibold"><?= $lang['live_lesson'] ?></span>
@@ -144,19 +147,19 @@ require_login();
         mirror_on: <?= json_encode($lang['mirror_on']) ?>
     };
 
-    // Placeholder YouTube video IDs for the different modules
-    const videoIds = {
-        'warmup': 'cEQZamaA0A4',     // Tai Chi Warmup
-        'walking': 'PNtWqDxwwMg',    // Tai Chi Walking
-        'cloudhands': 'y1jO2hQy_6o', // Cloud Hands
-        'default': 'vHBR5MZmEsY'
+    // HTML5 Video paths for the different modules
+    const videoFiles = {
+        'warmup': 'videos/warmup.mp4',     // Tai Chi Warmup
+        'walking': 'videos/walking.mp4',    // Tai Chi Walking
+        'cloudhands': 'videos/cloudhands.mp4', // Cloud Hands
+        'default': 'videos/warmup.mp4'
     };
 
     document.getElementById('session-title').textContent = translations[moduleName] || moduleName;
     
-    // Set the YouTube iframe source dynamically
-    const ytId = videoIds[moduleName] || videoIds['default'];
-    document.getElementById('video-frame').src = `https://www.youtube.com/embed/${ytId}?rel=0`;
+    // Set the local video source dynamically
+    const videoUrl = videoFiles[moduleName] || videoFiles['default'];
+    document.getElementById('video-frame').src = videoUrl;
 
     const startTime = Date.now();
 

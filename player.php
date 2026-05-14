@@ -68,13 +68,13 @@ require_login();
 </header>
 
 <main class="pt-24 max-w-6xl mx-auto px-6">
-    <section class="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg bg-surface-dim mb-8">
-        <img id="video-frame" class="w-full h-full object-cover transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4bNwrqcemIHYHKhHE6HnAYyyafE7HR--egO6gnKaElNnPi1scrbuzpnmn4Cd5NUwnAvsiran4azjJFKYG3cmQYjg5CXBTdAa7bd-TtQNlHrNkdHmpCECFxfcPJSDkjwMmVstzxB26RPaFgQa3SXCUvBRP3j3_Z_859oTUNBROXPcZFh_CSFSfqmebBtfA6KV52sXKQJfBq7rvv9nLiUgRwGKqdNrWwX_DhlcERWzF-Ohfz5DnSKiS82FaGwvd8wUi3jll3g3TkvM"/>
-        <div class="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-t from-black/40 via-transparent to-transparent">
-            <div class="flex justify-between items-start">
+    <section class="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg bg-black mb-8">
+        <iframe id="video-frame" class="w-full h-full transition-transform duration-300" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none">
+            <div class="flex justify-between items-start pointer-events-auto">
                 <span class="bg-primary px-4 py-1.5 rounded-full text-white text-sm font-semibold"><?= $lang['live_lesson'] ?></span>
             </div>
-            <div class="flex justify-end">
+            <div class="flex justify-end pointer-events-auto">
                 <div class="glass-panel px-4 py-2 rounded-xl flex items-center gap-2">
                     <span class="material-symbols-outlined text-primary">compare_arrows</span>
                     <span class="text-sm font-semibold" id="mirror-status"><?= $lang['mirror_off'] ?></span>
@@ -144,7 +144,19 @@ require_login();
         mirror_on: <?= json_encode($lang['mirror_on']) ?>
     };
 
+    // Placeholder YouTube video IDs for the different modules
+    const videoIds = {
+        'warmup': 'cEQZamaA0A4',     // Tai Chi Warmup
+        'walking': 'PNtWqDxwwMg',    // Tai Chi Walking
+        'cloudhands': 'y1jO2hQy_6o', // Cloud Hands
+        'default': 'vHBR5MZmEsY'
+    };
+
     document.getElementById('session-title').textContent = translations[moduleName] || moduleName;
+    
+    // Set the YouTube iframe source dynamically
+    const ytId = videoIds[moduleName] || videoIds['default'];
+    document.getElementById('video-frame').src = `https://www.youtube.com/embed/${ytId}?rel=0`;
 
     const startTime = Date.now();
 
